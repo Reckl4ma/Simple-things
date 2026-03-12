@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple things</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500" rel="stylesheet">
+</head>
+
+<style>
+    .header-top {
+        height: 40px; 
+    }
+
+    .hero {
+        height: 328px;
+    }
+
+    .hero-title {
+        font-family: Roboto; 
+        font-size: 30px; 
+        position: absolute; 
+        top: 50px; 
+        left: 15px; 
+        line-height:1; 
+        color:#4C5866; 
+        max-width: 221px;
+    }
+
+    .hero-text {
+        font-family: Roboto; 
+        font-size: 14px; 
+        position: absolute; 
+        top: 125px; 
+        left: 15px; 
+        line-height:1.5; 
+        color:#85859B; 
+        max-width: 289px;
+    }
+
+    .hero-btn {
+        position: relative; 
+        width:144px; 
+        height:50px; 
+        background:#ffffff; 
+        border:1px solid #7875FE; 
+        color:#7875FE; 
+        font-family: Roboto; 
+        font-size:18px; 
+        font-weight:400; 
+        top: 230px; 
+        left: 15px;
+    }
+
+    .business {
+        height: 1183px; 
+        background-color: #EBEBEB;
+    }
+    
+    .business-div {
+        max-width: 320px;
+        height: 100%; 
+        padding-top: 40px; 
+        padding-bottom: 60px;
+    }
+
+    .business-strip {
+        width: 290px; 
+        height: 1px; 
+        background-color: #C0C0C0;
+    }
+
+    .business-cards {
+        --bs-gutter-y: 8px;
+        height: 388px;
+        width: 290;
+        margin: 0 auto;
+    }
+
+    .business-card {
+        width: 290px;
+    }
+
+    .business-img {
+        width: 130px;
+        height: 96px;
+    }
+
+    .business-title {
+        font-family: Roboto; 
+        font-size: 16px; 
+        font-weight: 500; 
+        line-height: 1.5; 
+        color: #666666; 
+        padding-top: 12px; 
+        padding-left: 30px;
+    }
+
+    .business-text {
+        font-family: Roboto; 
+        font-size: 16px; 
+        font-weight: 400; 
+        line-height: 1.5; 
+        color: #85859B;
+        padding-left: 30px;
+    }
+
+    .business-div-folder {
+        padding-top: 80px;
+        padding-left: 15px;
+    }
+
+    .business-img-folder {
+        width: 290px;
+        height: 223px;
+    }
+
+    .business-texts-folder {
+        padding-left: 0px;
+    }
+
+    .business-title-folder {
+        font-family: Roboto; 
+        font-size: 24px; 
+        font-weight: 400; 
+        line-height: 1; 
+        color: #666666; 
+        padding-top: 20px;
+    }
+
+    .business-text-folder {
+        font-family: Roboto; 
+        font-size: 16px; 
+        font-weight: 400; 
+        line-height: 1.7; 
+        color: #85859B; 
+        padding-top: 10px;
+    }
+
+    .frame {
+        height: 1948px; 
+        background-color: #FFFFFF;
+    }
+
+    .frame-div {
+        max-width: 320px; 
+        height: 100%; 
+    }
+
+    .frame-col {
+        padding-top: 60px;
+        margin-left: 15px;
+    }
+
+    .frame1-img {
+        background-image: url("img/Frame\ 1\ big.svg");
+        width: 290px;
+        height: 180px;
+    }
+    .frame2-img {
+        background-image: url("img/Frame\ 2\ big.svg");
+        width: 290px;
+        height: 180px;
+    }
+    .frame3-img {
+        background-image: url("img/Frame\ 3\ big.svg");
+        width: 290px;
+        height: 180px;
+    }
+    .frame4-img {
+        background-image: url("img/Frame\ 4\ big.svg");
+        width: 290px;
+        height: 180px;
+        margin-top: -10px;
+    }
+
+    .frame-title {
+        font-family: Roboto; 
+        font-size: 24px; 
+        font-weight: 400; 
+        color: #666666; 
+        padding-top: 15px;
+    }
+
+    .frame-note {
+        font-family: Roboto; 
+        font-size: 14px; 
+        font-weight: 400; 
+        color: #B5B5BD;
+        margin-top: -1px;
+    }
+
+    .frame-text {
+        font-family: Roboto; 
+        font-size: 16px; 
+        font-weight: 400; 
+        line-height: 1.7; 
+        color: #85859B; 
+        padding-top: 4px;
+    }
+
+    .frame-btn {
+        font-family: Roboto; 
+        font-size: 20px; 
+        font-weight: 400; 
+        color: #7875FE;
+        padding-top: 8px;
+    }
+
+    .frame-arrow {
+        margin-top: 18px;
+        background-image: url("img/Arrow.svg");
+        width: 21px;
+        height: 13px;
+    }
+
+    .logo {
+        height: 200px; 
+        background-color: #EBEBEB;
+    }
+
+    .logo-div {
+        width: 320px; 
+        height: 100%; 
+        padding-top: 60px;
+    }
+
+    .logo-img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .pic {
+        height: 573px; 
+        background-color: #FFFFFF;
+    }
+
+    .pic-div {
+        width: 320px;
+        height: 100%;
+    }
+
+    .pic-img {
+        background-image: url(img/pic\ small.svg);
+        width: 290px;
+        height: 220px;
+        margin-top: 60px;
+        margin-left: 16px;
+    }
+
+    .pic-title {
+        font-family: Roboto; 
+        font-size: 24px; 
+        font-weight: 400; 
+        color: #666666;
+        padding-left: 16px;
+        margin-top: -5px;
+    }
+
+    .pic-text {
+        font-family: Roboto; 
+        font-size: 16px; 
+        font-weight: 400; 
+        color: #85859B; 
+        line-height: 1.7; 
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 16px;
+    }
+
+    .pic-btn {
+        width: 144px; 
+        height: 50px; 
+        border: 1px solid #7875FE; 
+        color: #7875FE; 
+        background-color: #FFFFFF; 
+        font-family: Roboto;
+        font-size: 18px; 
+        font-weight: 400;
+        margin-left: 16px;
+    }
+
+    .footer-icon {
+        height: 127px; 
+        background-color: #4C5866;
+    }
+
+    .footer-icon-bottom {
+        width:320px; 
+        height:21px;
+    }
+
+    .footer-icon-div {
+        width: 320px; 
+        height: 127px;
+    }
+
+    .footer-icon-top {
+        height:60px;
+    }
+
+    .footer-strip {
+        width: 290px; 
+        height: 1px; 
+        background-color: #69727E;
+        margin-left: 15px;
+    }
+
+    @media (min-width: 576px) {
+        .header-top {
+            height: 80px; 
+        }
+
+        .hero {
+            height: 620px;
+        }
+
+        .hero-title {
+            font-family: Roboto; 
+            font-size: 60px; 
+            position: absolute; 
+            top: 130px; 
+            left: 105px; 
+            line-height:1; 
+            color:#4C5866; 
+            max-width: 444px;
+        }
+
+        .hero-text {
+            font-family: Roboto; 
+            font-size: 18px; 
+            position: absolute; 
+            top: 280px; 
+            left: 105px; 
+            line-height:1.5; 
+            color:#85859B; 
+            max-width: 445px;
+        }
+
+        .hero-btn {
+            position: relative; 
+            width:255px; 
+            height:70px; 
+            background:#ffffff; 
+            border:1px solid #7875FE; 
+            color:#7875FE; 
+            font-family: Roboto; 
+            font-size:20px; 
+            font-weight:400; 
+            top: 420px; 
+            left: 105px;
+        }
+
+        .business {
+            height: 973px; 
+            background-color: #EBEBEB;
+        }
+
+        .business-div {
+            max-width: 1110px; 
+            height: 100%; 
+            padding-top: 81px; 
+            padding-bottom: 90px;
+        }
+
+        .business-strip {
+            width: 350px; 
+            height: 1px; 
+            background-color: #C0C0C0;
+            margin-top: 8px;
+        }
+
+        .business-cards {
+            --bs-gutter-x: 30px;
+            height: 139px;
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .business-card {
+            width: 350px;
+        }
+
+        .business-img {
+            width: 160px;
+            height: 118px;
+        }
+
+        .business-title {
+            font-family: Roboto; 
+            font-size: 18px; 
+            font-weight: 500; 
+            line-height: 1.5; 
+            color: #666666; 
+            padding-top: 18px; 
+            padding-left: 30px;
+        }
+
+        .business-text {
+            font-family: Roboto; 
+            font-size: 18px; 
+            font-weight: 400; 
+            line-height: 1.5; 
+            color: #85859B;
+            padding-left: 30px;
+        }
+
+        .business-div-folder {
+            padding-top: 90px;
+        }
+
+        .business-img-folder {
+            width: 730px;
+            height: 564px;
+        }
+
+        .business-texts-folder {
+            padding-left: 30px;
+        }
+
+        .business-title-folder {
+            font-family: Roboto; 
+            font-size: 40px; 
+            font-weight: 400; 
+            line-height: 1; 
+            color: #666666; 
+            padding-top: 59px;
+        }
+
+        .business-text-folder {
+            font-family: Roboto; 
+            font-size: 18px; 
+            font-weight: 400; 
+            line-height: 1.7; 
+            color: #85859B; 
+            padding-top: 20px;
+        }
+
+        .frame {
+            height: 645px; 
+            background-color: #FFFFFF;
+        }
+
+        .frame-div {
+            max-width: 1110px; 
+            height: 100%; 
+            padding-top: 30px;
+        }
+
+        .frame-col {
+            margin-left: 0px;
+        }
+
+        .frame1-img {
+            background-image: url("img/Frame\ 1.svg");
+            width: 255px;
+            height: 180px;
+        }
+        .frame2-img {
+            background-image: url("img/Frame\ 2.svg");
+            width: 255px;
+            height: 180px;
+        }
+        .frame3-img {
+            background-image: url("img/Frame\ 3.svg");
+            width: 255px;
+            height: 180px;
+        }
+        .frame4-img {
+            background-image: url("img/Frame\ 4.svg");
+            width: 255px;
+            height: 180px;
+            margin-top: 0px;
+        }
+
+        .frame-title {
+            font-family: Roboto; 
+            font-size: 30px; 
+            font-weight: 400; 
+            color: #666666; 
+            padding-top: 15px;
+        }
+
+        .frame-note {
+            font-family: Roboto; 
+            font-size: 14px; 
+            font-weight: 400; 
+            color: #B5B5BD;
+        }
+
+        .frame-text {
+            font-family: Roboto; 
+            font-size: 18px; 
+            font-weight: 400; 
+            line-height: 1.7; 
+            color: #85859B; 
+            padding-top: 8px;
+        }
+
+        .frame-btn {
+            font-family: Roboto; 
+            font-size: 20px; 
+            font-weight: 400; 
+            color: #7875FE;
+            margin-top: -8px;
+        }
+
+        .frame-arrow {
+            background-image: url("img/Arrow.svg");
+            width: 21px;
+            height: 15px;
+            margin-top: 11px;
+        }
+
+        .logo {
+            height: 315px; 
+            background-color: #EBEBEB;
+        }
+
+        .logo-div {
+            width: 1110px; 
+            height: 100%; 
+            padding-top: 90px;
+        }
+
+        .logo-img {
+            width: 255px;
+            height: 135px;
+        }
+
+        .pic {
+            height: 500px; 
+            background-color: #FFFFFF;
+        }
+
+        .pic-div {
+            width: 1110px;
+            height: 100%; 
+            padding-top: 90px; 
+            gap: 30px
+        }
+
+        .pic-img {
+            background-image: url(img/pic.svg);
+            width: 730px;
+            height: 410px;
+            margin-top: 0px;
+        }
+
+        .pic-title {
+            font-family: Roboto; 
+            font-size: 40px; 
+            font-weight: 400; 
+            color: #666666;
+        }
+
+        .pic-text {
+            font-family: Roboto; 
+            font-size: 18px; 
+            font-weight: 400; 
+            color: #85859B; 
+            line-height: 1.7; 
+            padding-bottom: 30px;
+            padding-top: 0px;
+        }
+
+        .pic-btn {
+            width: 255px; 
+            height: 70px; 
+            border: 1px solid #7875FE; 
+            color: #7875FE; 
+            background-color: #FFFFFF; 
+            font-family: Roboto;
+            font-size: 20px; font-weight: 400;
+        }
+
+        .footer-icon {
+            height: 101px; 
+            background-color: #4C5866;
+        }
+
+        .footer-icon-bottom {
+            width:1110px; 
+            height:21px;
+        }
+
+        .footer-icon-div {
+            width: 1110px; 
+            height: 80px;
+        }
+
+        .footer-icon-top {
+            height:80px;
+        }
+    }
+</style>
+
+<body>
+    <header class="border-bottom bg-white">
+        <div class="container px-0" style="max-width:1110px;">
+            <div class="d-flex align-items-center justify-content-center justify-content-sm-between header-top">
+                <img src="img/logo.svg">
+
+                <nav class="d-none d-sm-flex" style="gap:60px;">
+                    <a style="font-family: 'Roboto'; font-size: 20px; color: #4C5866;">Продукция</a>
+                    <a style="font-family: 'Roboto'; font-size: 20px; color: #4C5866;">Материалы</a>
+                    <a style="font-family: 'Roboto'; font-size: 20px; color: #4C5866;">О нас</a>
+                    <a style="font-family: 'Roboto'; font-size: 20px; color: #4C5866;">Контакты</a>
+
+                    <div class="d-flex align-items-center" style="gap:30px;">
+                        <img src="img/search.svg" style="width: 24px; height: 24px;">
+                        <img src="img/login.svg" style="width: 24px; height: 24px;">
+                    </div>
+                </nav>
+            </div>
+
+            <div class="border-top d-sm-none"></div>
+
+            <div class="d-flex justify-content-between align-items-center d-sm-none" style="height: 60px; padding-left: 15px; padding-right: 15px;">
+                <img src="img/menu.svg" style="width: 30px; height: 30px;">
+
+                <div class="d-flex align-items-center" style="gap: 30px">
+                    <img src="img/search.svg" style="width: 24px; height: 24px;">
+                    <img src="img/login.svg" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container px-0" style="max-width: 1110; height: 100%; position: relative;">
+
+            <img src="img/hero.svg" class="d-none d-sm-block" style="position:absolute; right:-60px; bottom:0; height:620px;">
+
+            <div class="hero-title">
+                Простые вещи. Из бумаги</div>
+
+            <div class="hero-text">
+                Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.</div>
+
+            <button class="hero-btn">
+                Каталог</button>
+
+        </div>
+    </section>
+
+    <section class="business">
+        <div class="container business-div px-0">
+            <div class="row business-cards">
+                <div class="col-12 col-sm-4 mt-sm-0" style="margin-top: 20px;">
+                    <div class="business-strip"></div>
+                    <div class="d-flex business-card" style="padding-top: 19px">
+                        <img src="img/Buissnes Cards v1.svg" class="business-img">
+                        <div>
+                            <div class="business-title">
+                                V.1</div>
+                            <div class="business-text">
+                                Результат вашего обучения</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4 mt-sm-0" style="margin-top: 20px;">
+                    <div class="business-strip"></div>
+                    <div class="d-flex business-card" style="padding-top: 19px">
+                        <img src="img/Buissnes Cards v2.svg" class="business-img">
+                        <div>
+                            <div class="business-title">
+                                V.2</div>
+                            <div class="business-text">
+                                Результат вашего обучения</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4 mt-sm-0" style="margin-top: 20px;">
+                    <div class="business-strip"></div>
+                    <div class="d-flex business-card" style="padding-top: 19px">
+                        <img src="img/Buissnes Cards v3.svg" class="business-img">
+                        <div>
+                            <div class="business-title">
+                                V.3</div>
+                            <div class="business-text">
+                                Результат вашего обучения</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row business-div-folder">
+                <div class="d-sm-flex">
+                    <img src="img/Folder.svg" class="business-img-folder">
+                    <div class="business-texts-folder">
+                        <div class="business-title-folder">
+                        Максимальная белизна</div>
+                        <div class="business-text-folder">
+                        <p>Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется наполнением.</p>
+                        <p>Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frame">
+        <div class="container px-0 frame-div">
+            <div class="row" style="--bs-gutter-x: 30px;">
+                <div class="col-12 col-sm-3 frame-col">
+                    <div class="frame1-img"></div>
+                    <div class="frame-title">Упаковка</div>
+                    <div class="frame-note">Тираж: от 50 штук</div>
+                    <div class="frame-text">
+                        Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</div>
+                    <div class="d-flex" style="gap: 5px; padding-top: 15px">
+                        <div class="frame-btn">Подробнее</div>
+                        <div class="frame-arrow"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 frame-col">
+                    <div class="frame2-img"></div>
+                    <div class="frame-title">Пакеты</div>
+                    <div class="frame-note">Тираж: от 200 штук</div>
+                    <div class="frame-text">
+                        С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</div>
+                    <div class="d-flex" style="gap: 5px; padding-top: 15px">
+                        <div class="frame-btn">Подробнее</div>
+                        <div class="frame-arrow"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 frame-col">
+                    <div class="frame3-img"></div>
+                    <div class="frame-title">Кейсы</div>
+                    <div class="frame-note">Тираж: от 30 штук</div>
+                    <div class="frame-text">
+                        Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</div>
+                    <div class="d-flex" style="gap: 5px; padding-top: 15px">
+                        <div class="frame-btn">Подробнее</div>
+                        <div class="frame-arrow"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 frame-col">
+                    <div class="frame4-img"></div>
+                    <div class="frame-title">Другие изделия</div>
+                    <div class="frame-note">Тираж: от 100 штук</div>
+                    <div class="frame-text">
+                        Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</div>
+                    <div class="d-flex" style="gap: 5px; padding-top: 15px">
+                        <div class="frame-btn">Подробнее</div>
+                        <div class="frame-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logo">
+        <div class="container px-0 logo-div">
+            <div class="row d-none d-sm-flex" style="--bs-gutter-x: 30px;">
+                <div class="col-3">
+                    <img src="img/Frame Logo 1.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 2.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 3.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 4.svg" class="logo-img">
+                </div>
+            </div>
+
+            <div class="d-sm-none d-flex flex-nowrap overflow-auto" style="gap: 100px; padding-left: 15px;">
+                <div class="col-3">
+                    <img src="img/Frame Logo 1.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 2.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 3.svg" class="logo-img">
+                </div>
+                <div class="col-3">
+                    <img src="img/Frame Logo 4.svg" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pic">
+        <div class="container px-0 d-none d-sm-flex justify-content-end pic-div">
+            <div style="max-width: 350px; padding-top: 15px;">
+                <div class="pic-title">Simple скетчбук</div>
+                <div class="pic-text">
+                    80 листов, твердая обложка, бумага  Fabriano 200 г/м². Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!</div>
+                <button class="pic-btn">
+                    Купить</button>
+            </div>
+            <div class="pic-img"></div>
+        </div>
+
+        <div class="container px-0 d-sm-none d-flex flex-column pic-div">
+            <div class="pic-img"></div>
+            <div style="max-width: 350px;">
+                <div class="pic-title">Simple скетчбук</div>
+                <div class="pic-text">
+                    80 листов, твердая обложка, бумага  Fabriano 200 г/м². Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!</div>
+                <button class="pic-btn">
+                    Купить</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-icon">
+        <div class="container px-0 footer-icon-div">
+            <div class="d-flex align-items-center justify-content-center justify-content-sm-between footer-icon-top">
+                <img src="img/Logo white.svg">
+                <div class="d-sm-flex d-none align-items-center" style="gap: 30px">
+                    <img src="img/icon1.svg" style="width: 24px; height: 24px;">
+                    <img src="img/icon2.svg" style="width: 24px; height: 24px;">
+                    <img src="img/icon3.svg" style="width: 24px; height: 24px;">
+                    <img src="img/icon4.svg" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+
+            <div class="footer-strip d-sm-none"></div>
+
+            <div class="d-flex justify-content-center align-items-center d-sm-none" style="height:60px; gap:30px;">
+                <img src="img/icon1.svg" style="width:24px; height:24px;">
+                <img src="img/icon2.svg" style="width:24px; height:24px;">
+                <img src="img/icon3.svg" style="width:24px; height:24px;">
+                <img src="img/icon4.svg" style="width:24px; height:24px;">
+            </div>
+        </div>
+        <div style="height:21px; background-color:#EBEBEB;">
+            <div class="container px-0 d-flex justify-content-center footer-icon-bottom">
+                <div style="font-family: Roboto; font-size: 13px; font-weight: 400; color: #4C5866;">SIMPLE</div>
+                <div style="font-family: Roboto; font-size: 13px; font-weight: 400; color: #BCBCBC;">®</div>
+                <div style="font-family: Roboto; font-size: 13px; font-weight: 400; color: #4C5866;">2021</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
